@@ -1,0 +1,18 @@
+on:
+  push:
+    branches:
+    - "develop"
+
+jobs:
+  pull-request:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: pull-request
+      uses: repo-sync/pull-request@v2
+      with:
+        source_branch: "master"
+        destination_branch: "develop"
+        pr_title: "BACKMERGE ${{ github.ref }} into develop"
+        pr_body: ":crown: *An automated PR*"
+        github_token: ${{ secrets.GITHUB_TOKEN }}

@@ -7,7 +7,7 @@
 <style type="text/css">
     /*!
 *
-* Twitter Bootstrap
+* Twitter Bootstrapssss
 *
 */
 /*!
@@ -8451,15 +8451,15 @@ label {
 }
 /* Flexible box model classes */
 /* Taken from Alex Russell http://infrequently.org/2009/08/css-3-progress/ */
-/* This file is a compatability layer.  It allows the usage of flexible box 
+/* This file is a compatability layer.  It allows the usage of flexible box
 model layouts accross multiple browsers, including older browsers.  The newest,
 universal implementation of the flexible box model is used when available (see
-`Modern browsers` comments below).  Browsers that are known to implement this 
+`Modern browsers` comments below).  Browsers that are known to implement this
 new spec completely include:
 
     Firefox 28.0+
     Chrome 29.0+
-    Internet Explorer 11+ 
+    Internet Explorer 11+
     Opera 17.0+
 
 Browsers not listed, including Safari, are supported via the styling under the
@@ -11233,7 +11233,7 @@ div#pager .ui-resizable-handle {
   background: #f7f7f7;
   border-top: 1px solid #cfcfcf;
   border-bottom: 1px solid #cfcfcf;
-  /* This injects handle bars (a short, wide = symbol) for 
+  /* This injects handle bars (a short, wide = symbol) for
         the resize handle. */
 }
 div#pager .ui-resizable-handle::after {
@@ -11676,7 +11676,7 @@ ul.typeahead-list > li > a {
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
     </style>
 <style type="text/css">
-    
+
 /* Temporary definitions which will become obsolete with Notebook release 5.0 */
 .ansi-black-fg { color: #3E424D; }
 .ansi-black-bg { background-color: #3E424D; }
@@ -11730,14 +11730,14 @@ div#notebook {
   div.cell {
     display: block;
     page-break-inside: avoid;
-  } 
-  div.output_wrapper { 
-    display: block;
-    page-break-inside: avoid; 
   }
-  div.output { 
+  div.output_wrapper {
     display: block;
-    page-break-inside: avoid; 
+    page-break-inside: avoid;
+  }
+  div.output {
+    display: block;
+    page-break-inside: avoid;
   }
 }
 </style>
@@ -11816,7 +11816,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="kn">import</span> <span class="n">load_files</span>       
+<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="kn">import</span> <span class="n">load_files</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
 <span class="kn">from</span> <span class="nn">glob</span> <span class="kn">import</span> <span class="n">glob</span>
 <span class="kn">from</span> <span class="nn">keras.utils</span> <span class="kn">import</span> <span class="n">np_utils</span>
@@ -11948,10 +11948,10 @@ There are 836 test dog images.
 <div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">cv2</span>                
+<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">cv2</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
 
-<span class="o">%</span><span class="k">matplotlib</span> inline                               
+<span class="o">%</span><span class="k">matplotlib</span> inline
 
 <span class="c1"># extract pre-trained face detector</span>
 <span class="n">face_cascade</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">CascadeClassifier</span><span class="p">(</span><span class="s1">&#39;haarcascades/haarcascade_frontalface_alt.xml&#39;</span><span class="p">)</span>
@@ -11971,7 +11971,7 @@ There are 836 test dog images.
 <span class="k">for</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">w</span><span class="p">,</span><span class="n">h</span><span class="p">)</span> <span class="ow">in</span> <span class="n">faces</span><span class="p">:</span>
     <span class="c1"># add bounding box to color image</span>
     <span class="n">cv2</span><span class="o">.</span><span class="n">rectangle</span><span class="p">(</span><span class="n">img</span><span class="p">,(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">),(</span><span class="n">x</span><span class="o">+</span><span class="n">w</span><span class="p">,</span><span class="n">y</span><span class="o">+</span><span class="n">h</span><span class="p">),(</span><span class="mi">255</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">),</span><span class="mi">2</span><span class="p">)</span>
-    
+
 <span class="c1"># convert BGR image to RGB for plotting</span>
 <span class="n">cv_rgb</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">COLOR_BGR2RGB</span><span class="p">)</span>
 
@@ -13309,7 +13309,7 @@ $$</p>
 <div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">keras.preprocessing</span> <span class="kn">import</span> <span class="n">image</span>                  
+<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">keras.preprocessing</span> <span class="kn">import</span> <span class="n">image</span>
 <span class="kn">from</span> <span class="nn">tqdm</span> <span class="kn">import</span> <span class="n">tqdm</span>
 
 <span class="k">def</span> <span class="nf">path_to_tensor</span><span class="p">(</span><span class="n">img_path</span><span class="p">):</span>
@@ -13503,8 +13503,8 @@ Percentage of correctly detected dog (dog_files_short) 100.0%
 <div class="prompt input_prompt">In&nbsp;[49]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">ImageFile</span>                            
-<span class="n">ImageFile</span><span class="o">.</span><span class="n">LOAD_TRUNCATED_IMAGES</span> <span class="o">=</span> <span class="bp">True</span>                 
+<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">ImageFile</span>
+<span class="n">ImageFile</span><span class="o">.</span><span class="n">LOAD_TRUNCATED_IMAGES</span> <span class="o">=</span> <span class="bp">True</span>
 
 <span class="c1"># pre-process the data for Keras</span>
 <span class="n">train_tensors</span> <span class="o">=</span> <span class="n">paths_to_tensor</span><span class="p">(</span><span class="n">train_files</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;float32&#39;</span><span class="p">)</span><span class="o">/</span><span class="mi">255</span>
@@ -13526,7 +13526,7 @@ Percentage of correctly detected dog (dog_files_short) 100.0%
 
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>100%|██████████| 6680/6680 [01:41&lt;00:00, 65.91it/s] 
+<pre>100%|██████████| 6680/6680 [01:41&lt;00:00, 65.91it/s]
 100%|██████████| 835/835 [00:13&lt;00:00, 63.78it/s]
 100%|██████████| 836/836 [00:13&lt;00:00, 62.44it/s]
 </pre>
@@ -13599,23 +13599,23 @@ Percentage of correctly detected dog (dog_files_short) 100.0%
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>_________________________________________________________________
-Layer (type)                 Output Shape              Param #   
+Layer (type)                 Output Shape              Param #
 =================================================================
-conv2d_12 (Conv2D)           (None, 224, 224, 16)      208       
+conv2d_12 (Conv2D)           (None, 224, 224, 16)      208
 _________________________________________________________________
-max_pooling2d_13 (MaxPooling (None, 112, 112, 16)      0         
+max_pooling2d_13 (MaxPooling (None, 112, 112, 16)      0
 _________________________________________________________________
-conv2d_13 (Conv2D)           (None, 112, 112, 32)      2080      
+conv2d_13 (Conv2D)           (None, 112, 112, 32)      2080
 _________________________________________________________________
-max_pooling2d_14 (MaxPooling (None, 56, 56, 32)        0         
+max_pooling2d_14 (MaxPooling (None, 56, 56, 32)        0
 _________________________________________________________________
-conv2d_14 (Conv2D)           (None, 56, 56, 64)        8256      
+conv2d_14 (Conv2D)           (None, 56, 56, 64)        8256
 _________________________________________________________________
-max_pooling2d_15 (MaxPooling (None, 28, 28, 64)        0         
+max_pooling2d_15 (MaxPooling (None, 28, 28, 64)        0
 _________________________________________________________________
-global_average_pooling2d_5 ( (None, 64)                0         
+global_average_pooling2d_5 ( (None, 64)                0
 _________________________________________________________________
-dense_5 (Dense)              (None, 133)               8645      
+dense_5 (Dense)              (None, 133)               8645
 =================================================================
 Total params: 19,189
 Trainable params: 19,189
@@ -13665,7 +13665,7 @@ _________________________________________________________________
 <div class="prompt input_prompt">In&nbsp;[52]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">keras.callbacks</span> <span class="kn">import</span> <span class="n">ModelCheckpoint</span>  
+<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">keras.callbacks</span> <span class="kn">import</span> <span class="n">ModelCheckpoint</span>
 
 <span class="c1">### TODO: specify the number of epochs that you would like to use to train the model.</span>
 
@@ -13673,10 +13673,10 @@ _________________________________________________________________
 
 <span class="c1">### Do NOT modify the code below this line.</span>
 
-<span class="n">checkpointer</span> <span class="o">=</span> <span class="n">ModelCheckpoint</span><span class="p">(</span><span class="n">filepath</span><span class="o">=</span><span class="s1">&#39;saved_models/weights.best.from_scratch.hdf5&#39;</span><span class="p">,</span> 
+<span class="n">checkpointer</span> <span class="o">=</span> <span class="n">ModelCheckpoint</span><span class="p">(</span><span class="n">filepath</span><span class="o">=</span><span class="s1">&#39;saved_models/weights.best.from_scratch.hdf5&#39;</span><span class="p">,</span>
                                <span class="n">verbose</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">save_best_only</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
 
-<span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">train_tensors</span><span class="p">,</span> <span class="n">train_targets</span><span class="p">,</span> 
+<span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">train_tensors</span><span class="p">,</span> <span class="n">train_targets</span><span class="p">,</span>
           <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">valid_tensors</span><span class="p">,</span> <span class="n">valid_targets</span><span class="p">),</span>
           <span class="n">epochs</span><span class="o">=</span><span class="n">epochs</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">callbacks</span><span class="o">=</span><span class="p">[</span><span class="n">checkpointer</span><span class="p">],</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 </pre></div>
@@ -13876,11 +13876,11 @@ Epoch 10/10
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>_________________________________________________________________
-Layer (type)                 Output Shape              Param #   
+Layer (type)                 Output Shape              Param #
 =================================================================
-global_average_pooling2d_6 ( (None, 512)               0         
+global_average_pooling2d_6 ( (None, 512)               0
 _________________________________________________________________
-dense_6 (Dense)              (None, 133)               68229     
+dense_6 (Dense)              (None, 133)               68229
 =================================================================
 Total params: 68,229
 Trainable params: 68,229
@@ -13928,10 +13928,10 @@ _________________________________________________________________
 <div class="prompt input_prompt">In&nbsp;[58]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">checkpointer</span> <span class="o">=</span> <span class="n">ModelCheckpoint</span><span class="p">(</span><span class="n">filepath</span><span class="o">=</span><span class="s1">&#39;saved_models/weights.best.VGG16.hdf5&#39;</span><span class="p">,</span> 
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">checkpointer</span> <span class="o">=</span> <span class="n">ModelCheckpoint</span><span class="p">(</span><span class="n">filepath</span><span class="o">=</span><span class="s1">&#39;saved_models/weights.best.VGG16.hdf5&#39;</span><span class="p">,</span>
                                <span class="n">verbose</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">save_best_only</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
 
-<span class="n">VGG16_model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">train_VGG16</span><span class="p">,</span> <span class="n">train_targets</span><span class="p">,</span> 
+<span class="n">VGG16_model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">train_VGG16</span><span class="p">,</span> <span class="n">train_targets</span><span class="p">,</span>
           <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">valid_VGG16</span><span class="p">,</span> <span class="n">valid_targets</span><span class="p">),</span>
           <span class="n">epochs</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">callbacks</span><span class="o">=</span><span class="p">[</span><span class="n">checkpointer</span><span class="p">],</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 </pre></div>
@@ -14218,11 +14218,11 @@ test_{network} = bottleneck_features['test']</code></pre>
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>_________________________________________________________________
-Layer (type)                 Output Shape              Param #   
+Layer (type)                 Output Shape              Param #
 =================================================================
-global_average_pooling2d_7 ( (None, 2048)              0         
+global_average_pooling2d_7 ( (None, 2048)              0
 _________________________________________________________________
-dense_7 (Dense)              (None, 133)               272517    
+dense_7 (Dense)              (None, 133)               272517
 =================================================================
 Total params: 272,517
 Trainable params: 272,517
@@ -14272,10 +14272,10 @@ _________________________________________________________________
 <div class="prompt input_prompt">In&nbsp;[65]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">checkpointer</span> <span class="o">=</span> <span class="n">ModelCheckpoint</span><span class="p">(</span><span class="n">filepath</span><span class="o">=</span><span class="s1">&#39;saved_models/weights.best.Resnet50.hdf5&#39;</span><span class="p">,</span> 
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">checkpointer</span> <span class="o">=</span> <span class="n">ModelCheckpoint</span><span class="p">(</span><span class="n">filepath</span><span class="o">=</span><span class="s1">&#39;saved_models/weights.best.Resnet50.hdf5&#39;</span><span class="p">,</span>
                                <span class="n">verbose</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">save_best_only</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
 
-<span class="n">Resnet50_model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">train_Resnet50</span><span class="p">,</span> <span class="n">train_targets</span><span class="p">,</span> 
+<span class="n">Resnet50_model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">train_Resnet50</span><span class="p">,</span> <span class="n">train_targets</span><span class="p">,</span>
           <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">valid_Resnet50</span><span class="p">,</span> <span class="n">valid_targets</span><span class="p">),</span>
           <span class="n">epochs</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">callbacks</span><span class="o">=</span><span class="p">[</span><span class="n">checkpointer</span><span class="p">],</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 </pre></div>
@@ -14506,11 +14506,11 @@ Epoch 20/20
 <div class="prompt input_prompt">In&nbsp;[69]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">dog_breed</span><span class="p">(</span><span class="n">img_path</span><span class="p">):</span>   
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">dog_breed</span><span class="p">(</span><span class="n">img_path</span><span class="p">):</span>
     <span class="n">img</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="n">img_path</span><span class="p">)</span>
     <span class="n">cv_rgb</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">COLOR_BGR2RGB</span><span class="p">)</span>
     <span class="n">imgplot</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">cv_rgb</span><span class="p">)</span>
-    
+
     <span class="k">if</span> <span class="n">face_detector</span><span class="p">(</span><span class="n">img_path</span><span class="p">):</span>
         <span class="k">print</span><span class="p">(</span><span class="s1">&#39;It is a human!&#39;</span><span class="p">)</span>
         <span class="n">breed</span> <span class="o">=</span> <span class="n">Resnet50_predict_breed</span><span class="p">(</span><span class="n">img_path</span><span class="p">)</span>
@@ -14521,7 +14521,7 @@ Epoch 20/20
         <span class="n">breed</span> <span class="o">=</span> <span class="n">Resnet50_predict_breed</span><span class="p">(</span><span class="n">img_path</span><span class="p">)</span>
         <span class="k">print</span><span class="p">(</span><span class="s2">&quot;The breed is {}&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">breed</span><span class="p">))</span>
         <span class="k">return</span> <span class="n">breed</span>
-    <span class="k">else</span><span class="p">:</span> 
+    <span class="k">else</span><span class="p">:</span>
         <span class="k">print</span><span class="p">(</span><span class="s1">&#39;It is neither a human or a dog!&#39;</span><span class="p">)</span>
 </pre></div>
 
@@ -26926,7 +26926,7 @@ hISENcfQoZWEhISEhP8TyZAnJCQkrDmSIU9ISEhYcyRDnpCQkLDmSIY8ISEhYc2RDHlCQkLCmiMZ
   </div>
 </body>
 
- 
+
 
 
 </html>

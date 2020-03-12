@@ -14,5 +14,7 @@ jobs:
         source_branch: "master"
         destination_branch: "develop"
         pr_title: "BACKMERGE ${{ github.ref }} into develop"
-        pr_body: ":crown: *An automated PR*"
+        pr_body: "*An automated PR*"
+        pr_reviewer: "wei,worker"             # Comma-separated list (no spaces)
+        pr_assignee: "wei,worker"             # Comma-separated list (no spaces)
         github_token: ${{ secrets.GITHUB_TOKEN }}
